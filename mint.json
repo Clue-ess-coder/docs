@@ -1,10 +1,19 @@
 {
   "name": "CodeNest",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+  "theme": "prism",
+  "layout": "topnav",
+  "background": {
+    "style": "gradient"
   },
-  "favicon": "/favicon.svg",
+  "font": {
+    "headings": {
+      "family": "Rubik"
+    },
+    "body": {
+      "family": "Rubik"
+    }
+  },
+  "favicon": "assets/icons/favicon.svg",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -16,40 +25,42 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Contact",
       "url": "mailto:abdulhameedadedimeji@gmail.com"
+    },
+    {
+      "name": "Research",
+      "url": "https://inkspire.pages.dev"
     }
   ],
   "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://dashboard.codenest-mintlify.app"
+    "name": "GitHub",
+    "url": "https://github.com/Clue-ess-coder"
   },
-  "tabs": [
-    {
-      "name": "Study Lamp Project",
-      "url": "study-lamp"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://afterhours.onrender.com"
-    }
-  ],
+  "sidebar": {
+    "items": "container"
+  },
+  "primaryTab": {
+    "name": "Home"
+  },
   "navigation": [
     {
       "group": "Home",
-      "pages": ["introduction"]
+      "pages": ["index"]
     },
     {
-      "group": "Study Lamp",
+      "group": "Study Lamp Project",
       "pages": [
-        "study-lamp/esp8266",
-        "study-lamp/led-display",
-        "study-lamp/light-sensor",
-        "study-lamp/motion-sensor",
-        "study-lamp/esp8266"
+        "docs/study-lamp/introduction",
+        {
+          "group": "Basics",
+          "pages": [
+            "docs/study-lamp/esp8266",
+            "docs/study-lamp/led-display",
+            "docs/study-lamp/light-sensor",
+            "docs/study-lamp/motion-sensor"
+          ]
+        }
       ]
     }
   ],
